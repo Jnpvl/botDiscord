@@ -27,3 +27,21 @@ DISCORD_TOKEN=tu-token-de-bot-aquí
 ```bash https://discord.com/developers/applications ```
 ## Para iniciar
 node index.js
+
+
+# Despliegue del Bot de Discord en EC2 con PM2
+
+## Manteniendo tu Bot de Discord en Línea
+
+Para que tu bot de Discord se mantenga en funcionamiento continuo en una instancia de EC2, puedes utilizar PM2, un gestor de procesos para aplicaciones Node.js que asegura que tu aplicación se mantenga viva y se reinicie automáticamente después de fallos o reinicios.
+
+### Instalación
+
+1. **Instalar PM2 Globalmente**:
+   ```sh
+   npm install pm2 -g
+2. **cd /ruta/a/tu/bot**
+3. **pm2 start index.js**
+4. **pm2 startup**
+
+
